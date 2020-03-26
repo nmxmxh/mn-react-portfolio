@@ -1,0 +1,72 @@
+.introduction {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Carter One', cursive;
+    margin: auto;
+    color: white;
+    background-color: black;
+    word-spacing: .2rem;
+}
+
+.introduction-text h1 {
+    font-size: 4.5rem;
+}
+
+.introduction-text h2 {
+    font-size: 3rem;
+}
+
+@media (max-width: 1000px) {
+    .introduction-text h1 {
+        font-size: 4rem;
+    }
+
+    .introduction-text h2 {
+        font-size: 2.5rem;
+    }
+} 
+
+@media (max-width: 800px) {
+    .introduction-text h1 {
+        font-size: 3.5rem;
+    }
+
+    .introduction-text h2 {
+        font-size: 2rem;
+    }
+} 
+
+@media (max-width: 700px) {
+    .introduction-text h1 {
+        font-size: 3rem;
+    }
+
+    .introduction-text h2 {
+        font-size: 1.5rem;
+    }
+} 
+
+@media (max-width: 600px) {
+    .introduction-text h1 {
+        font-size: 2.5rem;
+    }
+
+    .introduction-text h2 {
+        font-size: 1rem;
+    }
+} 
+
+@media (max-height: 600px) {
+    .introduction-text h1 {
+        font-size: 3.5rem;
+    }
+
+    .introduction-text h2 {
+        font-size: 1.5rem;
+    } 
+}

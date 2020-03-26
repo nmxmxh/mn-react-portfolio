@@ -1,0 +1,193 @@
+.menu-bar {
+    background-color: rgb(0, 0, 0);
+    position: fixed;
+    height: 100%;
+    width: 7.5%;
+    position: fixed;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Inter', sans-serif;
+
+    @media (max-width: 800px) {
+        width: 15%;
+    }
+
+    .navigation-home {
+        height: 33%;
+        display: flex;
+        align-items: center;
+
+        @media (max-height: 600px) {
+            height: 20%;
+        }
+
+        .navigation-bar-icon {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            h1 {
+                visibility: hidden;
+                position: static;
+                font-size: 0.75rem;
+                font-weight: 200;
+                margin-top: 10px;
+
+                @media (max-width: 800px) {
+                    visibility: visible;
+                    font-size: 0.5rem;
+                }
+
+                @media (max-height: 600px) {
+                    margin-top: 15px;
+                }
+
+            }
+
+            & img {
+                height: 35px;
+                width: 35px;
+                padding: 5px;
+                border-radius: 50%;
+                background-color: black;
+                transition: all 0.1s ease-in;
+
+                &:hover {
+                    filter: invert(100);
+                    transition: all 0.1s ease-in;
+
+                    & + h1 {
+                        visibility: visible;
+                    }
+                }
+
+                @media (max-width: 800px) {
+                    height: 30px;
+                    width: 30px;
+                }
+
+                @media (max-height: 600px) {
+                    height: 20px;
+                    width: 20px;
+                    padding: 2.5px;                  
+                }
+            }
+
+        }
+    }
+
+    .navigation-bar {
+        display: flex;
+        flex-direction: column;
+        height: 33%;
+        width: 100%;
+
+        .navigation-bar-icon {
+            margin-top: 15px;
+            margin-bottom: 5px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            @media (max-width: 800px) {
+                margin-top: 20px;
+                margin-bottom: 10px;
+            }
+
+            @media (max-height: 600px) {
+                margin-top: 5px;
+                margin-bottom: 2.5px;
+            }
+
+            h1 {
+                visibility: hidden;
+                position: static;
+                font-size: 0.75rem;
+                font-weight: 200;
+                margin-top: 10px;
+
+                @media (max-width: 800px) {
+                    visibility: visible;
+                    font-size: 0.5rem;
+                    margin-top: 5px;
+                }
+            }
+
+            & img {
+                height: 35px;
+                width: 35px;
+                padding: 5px;
+                border-radius: 50%;
+                background-color: black;
+                transition: all 0.1s ease-in;
+
+                @media (max-width: 800px) {
+                    height: 30px;
+                    width: 30px;
+                }
+
+                @media (max-height: 600px) {
+                    height: 20px;
+                    width: 20px;
+                    padding: 2.5px;                  
+                }
+
+                &:hover {
+                    filter: invert(100);
+                    transition: all 0.1s ease-in;
+
+                    & + h1 {
+                        visibility: visible;
+                    }
+                }
+            }
+
+        }
+    }
+
+    .social-links {
+        display: flex;
+        flex-direction: column;
+        height: 33%;
+        justify-content: flex-end;
+        margin-bottom: 20px;
+
+        
+        @media (max-height: 600px) {
+            margin-bottom: 5px;                 
+        }
+
+        .fa {
+            margin-top: 10px;
+            margin-bottom: 10px;
+            padding: 7.5px;
+            color: white;
+            transition: all 0.1s ease-in;
+
+            @media (max-height: 600px) {
+                padding: 7.5px;
+                margin-top: 2.5px;
+                margin-bottom: 2.5px;  
+                font-size: 0.75rem;            
+            }
+   
+            &:hover {
+                border-radius: 50%;
+                color: black;
+                background-color: white;
+           
+            }
+        }
+    }
+}
+
+
+
+
+
+

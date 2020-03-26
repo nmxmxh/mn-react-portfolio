@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css?family=Carter+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Thambi+2:wght@600&display=swap');
+
+.section-container {
+    overflow: hidden;
+    border: 0;
+}
+
+#pinContainer {
+    height: 100vh;
+    width: 92.5vw;
+    overflow: hidden;
+
+    @media (max-width: 800px) {
+        height: 100vh;
+        overflow: hidden;
+        width: 85vw;            
+      }
+}
+
+#pinContainer .panel {
+    height: 100vh;
+    width: 92.5vw;
+    position: absolute;
+    text-align: center;
+
+    @media (max-width: 800px) {
+        right: 0;         
+        width: 85vw;            
+    }
+}
