@@ -12,7 +12,7 @@
 
     h2 {
         font-weight: 200;
-        margin-top: 2.5%;
+        margin-top: 1.5%;
 
         @media(max-width: 500px) {
            font-size: 1.5rem;
@@ -30,6 +30,10 @@
         align-items: center;
         width:  100%;
         margin: auto;
+
+        .skill-stack-container {
+            margin-bottom: 5px;
+        }
     
         .img-container {
             display: flex;

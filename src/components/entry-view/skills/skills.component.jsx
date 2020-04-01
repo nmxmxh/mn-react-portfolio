@@ -18,7 +18,7 @@ const Skills = () => (
     <div className="skill-container">
         <div className="skill-stack">
             <div className="skill-stack-container">
-                <h2>STACK</h2>
+                <h2>PREFFERED STACK</h2>
                 <div className="img-container">
                     <div className="img-h3-container">
                         <img className="skill-stack-container-img1" src={nodeJsLogo} alt="NodeJS Logo"/>
@@ -35,7 +35,7 @@ const Skills = () => (
                 </div>
             </div>
             <div className="skill-prog-lang-container">
-                <h2>LANGUAGES</h2>
+                <h2>PROGRAMMING LANGUAGES</h2>
                 <div className="img-container">
                     <div className="img-h3-container">
                         <img src={jsLogo} className="skill-prog-lang-container-img1" alt="Javascript Logo"/>
@@ -53,7 +53,7 @@ const Skills = () => (
             </div>
         </div>
         <div className="skill-sub-container">
-            <h2>SECONDARY</h2>
+            <h2>SUPPLEMENTARY TOOLS</h2>
             <div className="img-container">
                 <div>
                     <img src={adobeAiLogo} className="skill-sub-container-img1" alt="Adobe Illustrator Logo"/>

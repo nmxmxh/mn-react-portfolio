@@ -1,0 +1,13 @@
+.projects-container {
+    color: white;
+    margin-top: 2.5%;
+    margin-left: 2.5%;
+}
+
+.projects-card-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: 90%;
+    width: 100%;
+}
