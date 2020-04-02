@@ -2,6 +2,8 @@ import React from 'react';
 import { Controller, Scene } from 'react-scrollmagic';
 import { Tween, Timeline } from 'react-gsap';
 
+import { Helmet } from 'react-helmet';
+
 import Introduction from './introduction/introduction.component';
 import Objective from './objective/objective.component';
 import Skills from './skills/skills.component';
@@ -11,6 +13,9 @@ import './entry-view.styles.scss';
 
 const EntryView = () => (
   <div className="section-container">
+    <Helmet>
+        <title>Nobert's Portfolio</title>
+    </Helmet>
     <Controller>
       <Scene
         triggerHook="onLeave"
