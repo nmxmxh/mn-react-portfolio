@@ -25,6 +25,18 @@
             height: 20%;
         }
 
+        
+        .active {
+            img {
+                filter: invert(100);
+                transition: all 0.1s ease-in;
+        
+                & + h1 {
+                    visibility: visible;
+                }
+            }
+        }
+
         .navigation-bar-icon {
             display: flex;
             flex-direction: column;
@@ -34,9 +46,9 @@
             h1 {
                 visibility: hidden;
                 position: static;
-                font-size: 0.75rem;
+                font-size: 0.7rem;
                 font-weight: 200;
-                margin-top: 5px;
+                margin-top: 3.5px;
 
                 @media (max-width: 1024px) {
                     visibility: visible;
@@ -50,8 +62,8 @@
             }
 
             & img {
-                height: 35px;
-                width: 35px;
+                height: 40px;
+                width: 40px;
                 padding: 5px;
                 border-radius: 50%;
                 background-color: black;
@@ -67,18 +79,19 @@
                 }
 
                 @media (max-width: 800px) {
-                    height: 30px;
-                    width: 30px;
+                    height: 35px;
+                    width: 35px;
                 }
 
                 @media (max-height: 600px) {
-                    height: 20px;
-                    width: 20px;
+                    height: 25px;
+                    width: 25px;
                     padding: 2.5px;                  
                 }
             }
 
         }
+
     }
 
     .navigation-bar {
@@ -86,6 +99,18 @@
         flex-direction: column;
         height: 33%;
         width: 100%;
+
+        
+        .active {
+            img {
+                filter: invert(100);
+                transition: all 0.3s ease-in;
+        
+                & + h1 {
+                    visibility: visible;
+                }
+            }
+        }
 
         .navigation-bar-icon {
             margin-top: 15px;
@@ -110,7 +135,8 @@
                 position: static;
                 font-size: 0.75rem;
                 font-weight: 200;
-                margin-top: 10px;
+                margin-top: 3.5px;
+                margin-bottom: 3.5px;
 
                 @media (max-width: 1024px) {
                     visibility: visible;
@@ -186,7 +212,19 @@
             }
         }
     }
+
+    .active {
+        img {
+            filter: invert(100);
+            transition: all 0.1s ease-in;
+    
+            & + h1 {
+                visibility: visible;
+            }
+        }
+    }
 }
+
 
 
 

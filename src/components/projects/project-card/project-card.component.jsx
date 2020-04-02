@@ -4,8 +4,6 @@ import './project-card.styles.scss';
 
 const ProjectCard = ({ project }) => {
 
-    console.log(project)
- 
     return (
         <div className='project-card-container' style={{
             backgroundImage: `url(${project.imageUrl})`

@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link, withRouter } from 'react-router-dom';
 
 import './menu.styles.scss';
 
@@ -10,28 +10,38 @@ import homeIcon  from '../../assets/menu-logos/homeicon.png';
 
 
 
-const Menu = () => {
+const Menu = ( { location } ) => {
+
     return (
     <div className="menu-bar">
         <div className="navigation-home">
-            <Link className="navigation-bar-icon" id="home-icon" to='/'>
+            <Link className={`navigation-bar-icon ${location.pathname === "/" ? "active" : "" }`} id="home-icon" to='/'>
                 <img src={homeIcon} alt="home" />
                 <h1>HOME</h1>
             </Link>
         </div>
         <div className="navigation-bar">
-            <Link className="navigation-bar-icon" id="project-icon"  to='/projects'>
+            <Link 
+                className={`navigation-bar-icon ${location.pathname === "/projects" ? "active" : "" }`} 
+                to='/projects'
+            >
                     <img src={projectsIcon} alt="projects" />
                     <h1>PROJECTS</h1>
             </Link>
-            <div className="navigation-bar-icon">
+            <Link 
+                className={`navigation-bar-icon ${location.pathname === "/blog" ? "active" : "" }`} 
+                to='/blog'
+            >
                 <img src={blogIcon} alt="blog" />
                 <h1>BLOG</h1>
-            </div>
-            <div className="navigation-bar-icon">
+            </Link>
+            <Link 
+                className={`navigation-bar-icon ${location.pathname === "/contact" ? "active" : "" }`} 
+                to='/contact'
+            >
                 <img src={contactIcon} alt="contact"/>
                 <h1>CONTACT</h1>
-            </div>
+            </Link>
         </div>
         <div className="social-links">
             <div className="fa-container">
@@ -54,4 +64,5 @@ const Menu = () => {
     )
 }
 
-export default Menu;
+
+export default withRouter(Menu);

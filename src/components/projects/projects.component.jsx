@@ -8,7 +8,6 @@ import './project.styles.scss';
 import ProjectCard from './project-card/project-card.component';
 
 const Projects = ({ projects }) => {
-    console.log(projects);
 
     return (
     <div className="projects-container">
