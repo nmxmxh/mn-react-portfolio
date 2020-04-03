@@ -1,16 +1,36 @@
 import React from 'react';
+import { connect } from 'react-redux';
 
 import { Helmet } from 'react-helmet';
 
 import './blog.styles.scss';
 
-const Blog = () => (
+const Blog = ( { blog } ) => {
+
+    return (
     <div className="blog">
         <Helmet>
-            <title>Nobert's Portfolio | A few of my self indulgent ramblings.</title>
+            <title>Nobert's Portfolio | My self indulgent ramblings.</title>
         </Helmet>
-        WATASHI GAKITA
-    </div>
-);
 
-export default Blog;
+        {
+            blog.length <= 0 ?
+            (
+                <div className="empty-blog-container">No blog post(s) available at the moment.<br />(Work in progress).</div>
+            )
+            :
+            (
+                <div>Blog posts available</div>
+            )
+        }
+    </div>
+    )
+};
+
+const mapStateToProps = state => {
+    return {
+        blog: state.blog
+    }
+}
+
+export default connect(mapStateToProps)(Blog);

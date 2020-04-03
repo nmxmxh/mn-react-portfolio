@@ -1,3 +1,15 @@
 .blog {
-    color: white;
+    color: rgb(201, 201, 201);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.empty-blog-container{
+    font-family: 'Inter', sans-serif;
+    width: 75%;
+    text-align: center;
+    height: 10%;
 }

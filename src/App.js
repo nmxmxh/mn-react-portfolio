@@ -8,7 +8,7 @@ import Menu from './components/menu/menu.component';
 import EntryView from './components/entry-view/entry-view.component';
 import Projects from './components/projects/projects.component';
 import Blog from './components/blog/blog.component';
-import Contact from './components/contact/contact.component';
+import ProjectPage from './components/project-page/project-page.component';
 
 const ContentStyle = styled.div`
   margin-left: 7.5%;
@@ -37,7 +37,7 @@ function App() {
             <Route exact path='/' component={EntryView} />
             <Route exact path='/projects' component={Projects} />
             <Route exact path='/blog' component={Blog} />
-            <Route exact path='/contact' component={Contact} />
+            <Route exact path='/projects/:linkUrl' component={ProjectPage} />
           </ContentStyle>
       </Switch>
     </div>

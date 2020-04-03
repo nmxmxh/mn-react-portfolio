@@ -5,7 +5,6 @@ import './menu.styles.scss';
 
 import blogIcon  from '../../assets/menu-logos/writeicon.png';
 import projectsIcon from '../../assets/menu-logos/projectsicon.png';
-import contactIcon  from '../../assets/menu-logos/contactme.png';
 import homeIcon  from '../../assets/menu-logos/homeicon.png';
 
 
@@ -17,33 +16,26 @@ const Menu = ( { location } ) => {
         <div className="navigation-home">
             <Link className={`navigation-bar-icon ${location.pathname === "/" ? "active" : "" }`} id="home-icon" to='/'>
                 <img src={homeIcon} alt="home" />
-                <h1>HOME</h1>
+                <h1>home</h1>
             </Link>
         </div>
         <div className="navigation-bar">
             <Link 
-                className={`navigation-bar-icon ${location.pathname === "/projects" ? "active" : "" }`} 
+                className={`navigation-bar-icon ${location.pathname[1] === "p" ? "active" : "" }`} 
                 to='/projects'
             >
                     <img src={projectsIcon} alt="projects" />
-                    <h1>PROJECTS</h1>
+                    <h1>projects</h1>
             </Link>
             <Link 
-                className={`navigation-bar-icon ${location.pathname === "/blog" ? "active" : "" }`} 
+                className={`navigation-bar-icon ${location.pathname[1] === "b" ? "active" : "" }`} 
                 to='/blog'
             >
                 <img src={blogIcon} alt="blog" />
-                <h1>BLOG</h1>
-            </Link>
-            <Link 
-                className={`navigation-bar-icon ${location.pathname === "/contact" ? "active" : "" }`} 
-                to='/contact'
-            >
-                <img src={contactIcon} alt="contact"/>
-                <h1>CONTACT</h1>
+                <h1>blog</h1>
             </Link>
         </div>
-        <div className="social-links">
+        <div className="social-links"> 
             <div className="fa-container">
                 <a href="https://twitter.com/nobert___">
                     <div className="fa fa-twitter"/>

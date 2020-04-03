@@ -17,9 +17,16 @@ const Projects = ({ projects }) => {
 
         <div className="projects-card-container">
             {
+                projects.length > 0 ?
                 projects.map(project => (
                     <ProjectCard key={project.id} project={project} />
                 ))
+                :
+                (
+                    <div>
+                        No projects available
+                    </div>
+                )
             }
         </div>
     </div>
@@ -27,7 +34,7 @@ const Projects = ({ projects }) => {
 
 const mapStateToProps = state => {
     return {
-        projects: state.projects
+        projects: state.projects.projects
     }
 }
 
