@@ -14,20 +14,26 @@ const Menu = ( { location } ) => {
     return (
     <div className="menu-bar">
         <div className="navigation-home">
-            <Link className={`navigation-bar-icon ${location.pathname === "/" ? "active" : "" }`} id="home-icon" to='/'>
+            <Link 
+                alt="home" 
+                className={`navigation-bar-icon ${location.pathname === "/" ? "active" : "" }`} 
+                to='/'
+            >
                 <img src={homeIcon} alt="home" />
                 <h1>home</h1>
             </Link>
         </div>
         <div className="navigation-bar">
             <Link 
+                alt="projects"
                 className={`navigation-bar-icon ${location.pathname[1] === "p" ? "active" : "" }`} 
                 to='/projects'
             >
                     <img src={projectsIcon} alt="projects" />
                     <h1>projects</h1>
             </Link>
-            <Link 
+            <Link
+                alt="blog"
                 className={`navigation-bar-icon ${location.pathname[1] === "b" ? "active" : "" }`} 
                 to='/blog'
             >
@@ -37,17 +43,26 @@ const Menu = ( { location } ) => {
         </div>
         <div className="social-links"> 
             <div className="fa-container">
-                <a href="https://twitter.com/nobert___">
+                <a 
+                    href="https://twitter.com/nobert___"
+                    alt="twitter"
+                >
                     <div className="fa fa-twitter"/>
                 </a>
             </div>
             <div className="fa-container">
-                <a href="https://www.linkedin.com/in/momohnobert">
+                <a 
+                    href="https://www.linkedin.com/in/momohnobert"
+                    alt="linked-in"
+                >
                     <div className="fa fa-linkedin"/>
                 </a>
             </div>
             <div className="fa-container">
-                <a href="https://github.com/MomohNobert">
+                <a 
+                    href="https://github.com/MomohNobert"
+                    alt="github"
+                >
                     <div className="fa fa-github"/>
                 </a>
             </div>          

@@ -7,7 +7,7 @@ import './project-page.styles.scss';
 
 const ProjectPage = ({ selectedProject }) => {
     if (!selectedProject) {
-        return <Redirect to='/projects' />
+        return <Redirect to='/projects' alt="projects"/>
     }
 
     return (
