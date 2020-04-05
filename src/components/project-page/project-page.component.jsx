@@ -1,17 +1,29 @@
-import React from 'react';
+import React,{ useEffect } from 'react';
 import { connect } from 'react-redux';
 import { Redirect } from 'react-router-dom';
 import Helmet from 'react-helmet';
 
 import './project-page.styles.scss';
 
+function ScrollToTopOnMount() {
+    useEffect(() => {
+      window.scrollTo(0, 0);
+    }, []);
+  
+    return null;
+}
+
+
 const ProjectPage = ({ selectedProject }) => {
+
+
     if (!selectedProject) {
         return <Redirect to='/projects' alt="projects"/>
     }
 
     return (
         <div className="project-page">
+            <ScrollToTopOnMount />
             <Helmet>
                 <title>Nobert's Portfolio | {selectedProject.title} </title>
             </Helmet>
@@ -23,13 +35,23 @@ const ProjectPage = ({ selectedProject }) => {
                 <div className="project-entry-content">
                     <h1>{selectedProject.title}</h1>
                     <h2>{selectedProject.shortDesc}</h2>
-                    <div className="links-container">                    
-                        <a href={selectedProject.siteLink}>
-                            <p>SITE</p>
-                        </a>
-                        <a href={selectedProject.repoLink}>
-                            <p>REPO</p>
-                        </a>
+                    <div className="links-container">
+                        {
+                            selectedProject.siteLink ?
+                            <a href={selectedProject.siteLink}>
+                                <p>SITE</p>
+                            </a>
+                            :
+                            null
+                        }
+                        {
+                            selectedProject.repoLink ?
+                            <a href={selectedProject.repoLink}>
+                                <p>REPO</p>
+                            </a>
+                            :
+                            null
+                        }                  
                     </div>
                 </div>
             </div>
