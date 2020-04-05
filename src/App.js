@@ -1,14 +1,18 @@
-import React from 'react';
+import React, { lazy, Suspense } from 'react';
 import { Switch, Route } from 'react-router-dom';
 import styled from 'styled-components';
 
 import './App.css';
 
+import ErrorBoundary from './components/error-boundary/error-boundary.component';
 import Menu from './components/menu/menu.component';
-import EntryView from './components/entry-view/entry-view.component';
-import Projects from './components/projects/projects.component';
-import Blog from './components/blog/blog.component';
-import ProjectPage from './components/project-page/project-page.component';
+import Spinner from './components/with-spinner/spinner/spinner.component';
+
+const EntryView = lazy(() => import('./components/entry-view/entry-view.component'));
+const Projects = lazy(() => import('./components/projects/projects.component'));
+const Blog = lazy(() => import('./components/blog/blog.component'));
+const ProjectPage = lazy(() => import('./components/project-page/project-page.component'));
+
 
 const ContentStyle = styled.div`
   margin-left: 7.5%;
@@ -33,12 +37,16 @@ function App() {
         <Menu />
       </MenuStyle>
       <Switch>
+      <ErrorBoundary>
+        <Suspense fallback={<Spinner />}>
           <ContentStyle>
             <Route exact path='/' component={EntryView} />
             <Route exact path='/projects' component={Projects} />
             <Route exact path='/blog' component={Blog} />
             <Route exact path='/projects/:linkUrl' component={ProjectPage} />
           </ContentStyle>
+        </Suspense>
+      </ErrorBoundary>
       </Switch>
     </div>
   );

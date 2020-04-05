@@ -45,7 +45,7 @@ const Menu = ( { location } ) => {
             <div className="fa-container">
                 <a 
                     href="https://twitter.com/nobert___"
-                    alt="twitter"
+                    aria-label="twitter"
                 >
                     <div className="fa fa-twitter"/>
                 </a>
@@ -53,7 +53,7 @@ const Menu = ( { location } ) => {
             <div className="fa-container">
                 <a 
                     href="https://www.linkedin.com/in/momohnobert"
-                    alt="linked-in"
+                    aria-label="linked-in"
                 >
                     <div className="fa fa-linkedin"/>
                 </a>
@@ -61,7 +61,7 @@ const Menu = ( { location } ) => {
             <div className="fa-container">
                 <a 
                     href="https://github.com/MomohNobert"
-                    alt="github"
+                    aria-label="github"
                 >
                     <div className="fa fa-github"/>
                 </a>
