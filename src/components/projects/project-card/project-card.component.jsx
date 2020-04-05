@@ -32,5 +32,3 @@ const mapDispatchToProps = dispatch => ({
 });
 
 export default connect(null, mapDispatchToProps)(withRouter(ProjectCard));
-// export default withRouter(connect(null, mapDispatchToProps)(ProjectCard))
-// export default withRouter(ProjectCard);

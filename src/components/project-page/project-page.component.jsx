@@ -1,11 +1,11 @@
 import React,{ useEffect } from 'react';
 import { connect } from 'react-redux';
-import { Redirect } from 'react-router-dom';
+import { Redirect, withRouter } from 'react-router-dom';
 import Helmet from 'react-helmet';
 
 import './project-page.styles.scss';
 
-const ProjectPage = ({ selectedProject }) => {
+const ProjectPage = ({ selectedProject, match, projects}) => {
 
     function ScrollToTopOnMount() {
         useEffect(() => {
@@ -16,8 +16,16 @@ const ProjectPage = ({ selectedProject }) => {
     }
 
     if (!selectedProject) {
-        return <Redirect to='/projects' alt="projects"/>
-    }
+        projects.map(project => {
+            if(match.params.linkUrl === project.linkUrl) {
+                return selectedProject = project;
+            } else {
+                return <Redirect to='/projects' alt="projects"/>
+            }
+        })
+    } 
+
+
 
     return (
         <div className="project-page" >
@@ -72,8 +80,9 @@ const ProjectPage = ({ selectedProject }) => {
 
 const mapStateToProps = state => {
     return {
-        selectedProject: state.projects.selectedProject[0]
+        selectedProject: state.projects.selectedProject[0],
+        projects: state.projects.projects
     }
 }
 
-export default connect(mapStateToProps)(ProjectPage);
+export default connect(mapStateToProps)(withRouter(ProjectPage));
