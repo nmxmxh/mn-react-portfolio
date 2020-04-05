@@ -8,11 +8,10 @@ import projectsIcon from '../../assets/menu-logos/projectsicon.png';
 import homeIcon  from '../../assets/menu-logos/homeicon.png';
 
 
-
 const Menu = ( { location } ) => {
 
     return (
-    <div className="menu-bar">
+    <div className="menu-bar" id="menu">
         <div className="navigation-home">
             <Link 
                 alt="home" 

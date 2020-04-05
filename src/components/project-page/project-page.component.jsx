@@ -5,24 +5,22 @@ import Helmet from 'react-helmet';
 
 import './project-page.styles.scss';
 
-function ScrollToTopOnMount() {
-    useEffect(() => {
-      window.scrollTo(0, 0);
-    }, []);
-  
-    return null;
-}
-
-
 const ProjectPage = ({ selectedProject }) => {
 
+    function ScrollToTopOnMount() {
+        useEffect(() => {
+          window.scrollTo(0, 0);
+        }, []);
+      
+        return null;
+    }
 
     if (!selectedProject) {
         return <Redirect to='/projects' alt="projects"/>
     }
 
     return (
-        <div className="project-page">
+        <div className="project-page" >
             <ScrollToTopOnMount />
             <Helmet>
                 <title>Nobert's Portfolio | {selectedProject.title} </title>
@@ -63,7 +61,6 @@ const ProjectPage = ({ selectedProject }) => {
                         )
                     )
                 }
-                <p>{selectedProject.longDesc}</p>
             </div>
 
         </div>

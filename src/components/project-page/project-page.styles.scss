@@ -5,7 +5,7 @@
 }
 
 .project-entry-header {
-    display: grid;;
+    display: grid;
     grid-template-columns: 20% auto 20%;
     grid-template-rows: repeat(3, 1fr);
     width: 100%;
@@ -110,10 +110,15 @@
 }
 
 .project-content {
-    width: 75%;
-    text-align: right;
+    width: 80%;
+    text-align: left;
     margin: auto;
     margin-top: 5vh;
+
+    @media(max-width: 600px) {
+        width: 90%;
+        font-size: 0.9rem;
+    }
 }
 
 .project-content p {

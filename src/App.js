@@ -32,14 +32,14 @@ const MenuStyle = styled.div`
 function App() {
 
   return (
-    <div className="App">
+    <div className="App" id="App">
       <MenuStyle>
         <Menu />
       </MenuStyle>
       <Switch>
       <ErrorBoundary>
         <Suspense fallback={<Spinner />}>
-          <ContentStyle>
+          <ContentStyle id="content">
             <Route exact path='/' component={EntryView} />
             <Route exact path='/projects' component={Projects} />
             <Route exact path='/blog' component={Blog} />
