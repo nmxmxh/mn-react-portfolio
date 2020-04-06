@@ -3,8 +3,7 @@ var CACHE_NAME = 'pwa-task-manager';
 var urlsToCache = [
   '/',
   '/projects',
-  '/blog',
-  '/completed'
+  '/blog'
 ];
 
 var self = this
