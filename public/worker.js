@@ -1,9 +1,8 @@
-var CACHE_NAME = 'pwa-task-manager';
+var CACHE_NAME = 'nobert-site-cache';
 
 var urlsToCache = [
   '/',
-  '/projects',
-  '/blog'
+  '/completed'
 ];
 
 var self = this
