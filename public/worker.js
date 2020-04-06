@@ -14,7 +14,7 @@ self.addEventListener('install', event => {
     caches.open(CACHE_NAME)
       .then(function(cache) {
         console.log('Opened cache');
-        return cache.addAll(urlsToCache);
+        return cache.addAll(urlsToCache).then(() => console.log('Assets added to cache')).catch(err => console.log('Error while fetching assets', err));
       })
   );
 });
@@ -50,4 +50,6 @@ self.addEventListener('activate', event => {
     })
   );
 });
+
+
 
