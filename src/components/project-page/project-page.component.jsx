@@ -31,7 +31,7 @@ const ProjectPage = ({ selectedProject, match, projects}) => {
         <div className="project-page" >
             <ScrollToTopOnMount />
             <Helmet>
-                <title>Nobert's Portfolio | {selectedProject.title} </title>
+                <title>Nobert's Portfolio Projects | {selectedProject.title} </title>
             </Helmet>
         <div className="project-entry-container">
             <div className="project-entry-header">
