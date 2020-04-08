@@ -66,9 +66,9 @@
             }
 
             & img {
-                height: 40px;
-                width: 40px;
-                padding: 5px;
+                height: 35px;
+                width: 35px;
+                padding: 7.55px;
                 border-radius: 50%;
                 background-color: black;
                 transition: all 0.1s ease-in;
@@ -83,13 +83,13 @@
                 }
 
                 @media (max-width: 800px) {
-                    height: 35px;
-                    width: 35px;
+                    height: 30px;
+                    width: 30px;
                 }
 
                 @media (max-height: 600px) {
-                    height: 25px;
-                    width: 25px;
+                    height: 20px;
+                    width: 20px;
                     padding: 2.5px;                  
                 }
             }
@@ -156,14 +156,14 @@
             & img {
                 height: 35px;
                 width: 35px;
-                padding: 5px;
+                padding: 7.5px;
                 border-radius: 50%;
                 background-color: black;
                 transition: all 0.1s ease-in;
 
                 @media (max-width: 800px) {
-                    height: 20px;
-                    width: 20px;
+                    height: 30px;
+                    width: 30px;
                     padding: 7.5px;
                 }
 
@@ -192,6 +192,7 @@
         height: 33%;
         justify-content: flex-end;
         margin-bottom: 20px;
+        font-size: 0.9rem;
 
         
         @media (max-height: 600px) {
@@ -217,13 +218,23 @@
    
             &:hover {
                 border-radius: 50%;
-                color: black;
                 background-color: white;
-           
             }
 
 
         }
+
+        .fa-twitter:hover {
+            color: #00acee;
+        }
+
+        .fa-linkedin:hover {
+            color: #0e76a8;
+        }
+
+        .fa-github:hover {
+            color: #211f1f;
+        }    
 
     }
 
