@@ -19,7 +19,7 @@ const EntryView = () => (
     <Controller>
       <Scene
         triggerHook="onLeave"
-        duration="75%"
+        duration="100%"
         pin
       >
         <Timeline
