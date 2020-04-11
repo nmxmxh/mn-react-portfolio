@@ -72,7 +72,6 @@
                 border-radius: 50%;
                 background-color: black;
                 transition: all 0.1s ease-in;
-                border: 1.5px solid none;
                 filter: invert(100);
 
                 &:hover {
@@ -164,7 +163,7 @@
                 background-color: black;
                 transition: all 0.1s ease-in;
                 filter: invert(100);
-                border: 1.5px solid none;
+                
 
                 @media (max-width: 800px) {
                     height: 30px;
