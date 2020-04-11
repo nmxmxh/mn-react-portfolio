@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;500;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:wght@300&family=Roboto:ital,wght@1,300&display=swap');
 
 * {
   margin: 0;
@@ -18,8 +18,15 @@ a {
   -webkit-tap-highlight-color: transparent;
 }
 
+br {
+  content: "";
+  margin: 2em;
+  display: block;
+  font-size: 24%;
+}
+
 body {
-  background-color: black;
+  background-color: white;
   width: 100vw;
   overflow-x: hidden;
 }

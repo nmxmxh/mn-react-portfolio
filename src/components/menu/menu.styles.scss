@@ -1,16 +1,16 @@
 .menu-bar {
-    background-color: rgb(0, 0, 0);
+    background-color: white;
     position: fixed;
     height: 100%;
     width: 7.5%;
     position: fixed;
     top: 0px !important;
-    color: white;
+    color: black;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    font-family: 'Inter', sans-serif;
+    font-family: 'Comic Neue', cursive;
 
     @media (max-width: 800px) {
         width: 15%;
@@ -30,6 +30,7 @@
             img {
                 filter: invert(100);
                 transition: all 0.1s ease-in;
+                border: 1.5px solid rgb(0, 255, 255);
         
                 & + h1 {
                     visibility: visible;
@@ -51,7 +52,6 @@
                 visibility: hidden;
                 position: static;
                 font-size: 0.7rem;
-                font-weight: 200;
                 margin-top: 3.5px;
 
                 @media (max-width: 1024px) {
@@ -72,6 +72,8 @@
                 border-radius: 50%;
                 background-color: black;
                 transition: all 0.1s ease-in;
+                border: 1.5px solid none;
+                filter: invert(100);
 
                 &:hover {
                     filter: invert(100);
@@ -85,6 +87,7 @@
                 @media (max-width: 800px) {
                     height: 30px;
                     width: 30px;
+                    padding: 4.5px;
                 }
 
                 @media (max-height: 600px) {
@@ -108,7 +111,8 @@
         .active {
             img {
                 filter: invert(100);
-                transition: all 0.3s ease-in;
+                transition: all 0.1s ease-in;
+                border: 1.5px solid rgb(0, 255, 255);
         
                 & + h1 {
                     visibility: visible;
@@ -121,28 +125,27 @@
         }
 
         .navigation-bar-icon {
-            margin-top: 15px;
-            margin-bottom: 5px;
+            margin-top: 1rem;
+            margin-bottom: 0.5rem;
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
 
             @media (max-width: 800px) {
-                margin-top: 20px;
-                margin-bottom: 10px;
+                margin-top: 1rem;
+                margin-bottom: 1rem;
             }
 
             @media (max-height: 600px) {
-                margin-top: 5px;
-                margin-bottom: 2.5px;
+                margin-top: 1rem;
+                margin-bottom: 1rem;
             }
 
             h1 {
                 visibility: hidden;
                 position: static;
                 font-size: 0.75rem;
-                font-weight: 200;
                 margin-top: 3.5px;
                 margin-bottom: 3.5px;
 
@@ -160,11 +163,13 @@
                 border-radius: 50%;
                 background-color: black;
                 transition: all 0.1s ease-in;
+                filter: invert(100);
+                border: 1.5px solid none;
 
                 @media (max-width: 800px) {
                     height: 30px;
                     width: 30px;
-                    padding: 7.5px;
+                    padding: 4.5px;
                 }
 
                 @media (max-height: 600px) {
@@ -192,7 +197,7 @@
         height: 33%;
         justify-content: flex-end;
         margin-bottom: 20px;
-        font-size: 0.9rem;
+        font-size: 1rem;
 
         
         @media (max-height: 600px) {
@@ -204,7 +209,7 @@
             margin-top: 10px;
             margin-bottom: 10px;
             padding: 7.5px;
-            color: white;
+            color: black;
             transition: all 0.1s ease-in;
 
 
