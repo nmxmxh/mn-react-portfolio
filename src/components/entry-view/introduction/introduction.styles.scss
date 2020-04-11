@@ -6,7 +6,6 @@
     text-align: left;
     align-items: center;
     justify-content: center;
-    font-family: 'Carter One', cursive;
     margin: auto;
     color: black;
     background-color: white;
@@ -20,31 +19,35 @@
 
 .introduction-text-h1 {
     font-size: 5rem;
-    font-family: 'Caveat', cursive;
+    font-family: 'Oswald', sans-serif;
     text-shadow: 0.5px 0.5px 0.5px rgba(128, 128, 128, 0.2);
     animation: hello 2s forwards ease-out;
     color: rgb(0, 0, 0);
+    text-shadow: 3px 3px 1px rgba(0, 0, 0, 0.2); 
 }
 
 .introduction-text-first-h2 {
     margin-top: 0.25rem;
     font-size: 3rem;
-    font-family: 'Comic Neue', cursive;
+    font-family: 'EB Garamond', serif;
+    font-weight: 400;
     animation: nobert-h2 3s forwards ease-in;
 }
 
 .introduction-text-second-h2 {
     font-size: 3rem;
-    font-family: 'Comic Neue', cursive;
-    animation: nobert-h2 3.5s forwards ease-in;  
+    font-family: 'EB Garamond', serif;
+    font-weight: 400;
+    animation: nobert-h2 3.5s forwards ease-in;
 }
 
 .introduction-text-h3 {
-    margin-top: 0.5rem;
-    font-size: 1.4rem;
+    font-size: 1.75rem;
+    font-family: 'EB Garamond', serif;
+    font-weight: 400;
+    font-style: italic;
     color: red;
-    font-family: 'Poiret One', cursive;
-    animation: nobert-h2 4.5s forwards ease-in;
+    animation: nobert-h2 4s forwards ease-in;
 }
 
 

@@ -6,7 +6,6 @@
     text-align: left;
     align-items: center;
     justify-content: center;
-    font-family: 'Baloo Thambi 2', cursive;
     margin: auto;
     color: black;
     background-color:white;
@@ -19,20 +18,22 @@
 
 .objective-text h1 {
     font-size: 3.5rem;
-    font-family: 'Caveat', cursive;
+    font-family: 'Oswald', sans-serif;
 }
 
 .objective-text h2 {
     font-size: 2rem;
-    margin-top: 0.5rem;
-    font-family: 'Comic Neue', cursive;
+    font-family: 'EB Garamond', serif;
+    font-weight: 400;
 }
 
 .objective-text h3 {
     font-size: 1.5rem;
     margin-top: 0.75rem;
     color: red;
-    font-family: 'Poiret One', cursive;
+    font-family: 'EB Garamond', serif;
+    font-weight: 400;
+    font-style: italic;;
 }
 
 @media (max-width: 1000px) {
