@@ -37,16 +37,20 @@
 }
 
 @media (max-width: 1000px) {
+    .objective-text {
+        width: 80%;
+    }
+
     .objective-text h1 {
         font-size: 2.5rem;
     }
 
     .objective-text h2 {
-        font-size: 1.5rem;
+        font-size: 2rem;
     }
 
     .objective-text h3 {
-        font-size: 1rem;
+        font-size: 1.5rem;
     }
 } 
 
@@ -56,25 +60,25 @@
     }
 
     .objective-text h2 {
-        font-size: 1.5rem;
+        font-size: 2rem;
     }
 
     .objective-text h3 {
-        font-size: 1rem;
+        font-size: 1.5rem;
     }
 } 
 
 @media (max-width: 700px) {
     .objective-text h1 {
-        font-size: 2rem;
+        font-size: 2.5rem;
     }
 
     .objective-text h2 {
-        font-size: 1rem;
+        font-size: 1.7rem;
     }
 
     .objective-text h3 {
-        font-size: 0.8rem;
+        font-size: 1.1rem;
     }
 } 
 

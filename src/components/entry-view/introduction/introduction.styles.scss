@@ -24,11 +24,13 @@
     animation: hello 2s forwards ease-out;
     color: rgb(0, 0, 0);
     text-shadow: 3px 3px 1px rgba(0, 0, 0, 0.2); 
+    word-spacing: -.3rem;
+    line-height: 1.1;
 }
 
 .introduction-text-first-h2 {
     margin-top: 0.25rem;
-    font-size: 3rem;
+    font-size: 3.5rem;
     font-family: 'EB Garamond', serif;
     font-weight: 400;
     animation: nobert-h2 3s forwards ease-in;
@@ -42,7 +44,7 @@
 }
 
 .introduction-text-h3 {
-    font-size: 1.75rem;
+    font-size: 1.8rem;
     font-family: 'EB Garamond', serif;
     font-weight: 400;
     font-style: italic;
@@ -52,6 +54,12 @@
 
 
 @media (max-width: 1000px) {
+    
+    .introduction-text {
+        width: 75%;
+        margin: auto;
+    }
+
     .introduction-text h1 {
         font-size: 4rem;
     }
@@ -71,7 +79,7 @@
     }
 
     .introduction-text-h3 {
-        font-size: 0.75rem;
+        font-size: 1rem;
     }
 } 
 
@@ -81,7 +89,7 @@
     }
 
     .introduction-text h2 {
-        font-size: 1.5rem;
+        font-size: 2rem;
     }
 } 
 
@@ -91,7 +99,11 @@
     }
 
     .introduction-text h2 {
-        font-size: 1rem;
+        font-size: 1.7rem;
+    }
+
+    .introduction-text-h3 {
+        font-size: 1.2rem;
     }
 } 
 
@@ -103,6 +115,10 @@
     .introduction-text h2 {
         font-size: 1.5rem;
     } 
+
+    .introduction-text-h3 {
+        font-size: 1.1rem;
+    }
 }
 
 @keyframes hello {
