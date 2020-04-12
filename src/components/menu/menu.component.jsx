@@ -7,7 +7,6 @@ import blogIcon  from '../../assets/menu-logos/writeicon.png';
 import projectsIcon from '../../assets/menu-logos/projectsicon.png';
 import homeIcon  from '../../assets/menu-logos/homeicon.png';
 
-
 const Menu = ( { location } ) => {
 
     return (

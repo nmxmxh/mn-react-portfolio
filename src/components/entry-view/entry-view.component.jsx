@@ -9,6 +9,7 @@ import Objective from './objective/objective.component';
 import Skills from './skills/skills.component';
 import Misc from './misc/misc.component';
 
+
 import './entry-view.styles.scss';
 
 const EntryView = () => (

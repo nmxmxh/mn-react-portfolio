@@ -1,0 +1,141 @@
+.introduction {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  color: black;
+  background-color: white;
+  word-spacing: 0.2rem;
+}
+.introduction-text {
+  width: 55%;
+  margin: auto;
+}
+.introduction-text-h1 {
+  font-size: 5rem;
+  font-family: "Oswald", sans-serif;
+  text-shadow: 0.5px 0.5px 0.5px rgba(128, 128, 128, 0.2);
+  animation: hello 2s forwards ease-out;
+  color: #000;
+  text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+  word-spacing: -0.3rem;
+  line-height: 1.1;
+}
+.introduction-text-first-h2 {
+  margin-top: 0.25rem;
+  font-size: 3.5rem;
+  font-family: "EB Garamond", serif;
+  font-weight: 400;
+  animation: nobert-h2 3s forwards ease-in;
+}
+.introduction-text-second-h2 {
+  font-size: 3rem;
+  font-family: "EB Garamond", serif;
+  font-weight: 400;
+  animation: nobert-h2 3.5s forwards ease-in;
+}
+.introduction-text-h3 {
+  font-size: 1.8rem;
+  font-family: "EB Garamond", serif;
+  font-weight: 400;
+  font-style: italic;
+  color: red;
+  animation: nobert-h2 4s forwards ease-in;
+}
+@media (max-width: 1000px) {
+  .introduction-text {
+    width: 75%;
+    margin: auto;
+  }
+  .introduction-text h1 {
+    font-size: 4rem;
+  }
+  .introduction-text h2 {
+    font-size: 2.5rem;
+  }
+}
+@media (max-width: 800px) {
+  .introduction-text h1 {
+    font-size: 3.5rem;
+  }
+  .introduction-text h2 {
+    font-size: 2rem;
+  }
+  .introduction-text-h3 {
+    font-size: 1rem;
+  }
+}
+@media (max-width: 700px) {
+  .introduction-text h1 {
+    font-size: 3rem;
+  }
+  .introduction-text h2 {
+    font-size: 2rem;
+  }
+}
+@media (max-width: 600px) {
+  .introduction-text h1 {
+    font-size: 2.5rem;
+  }
+  .introduction-text h2 {
+    font-size: 1.7rem;
+  }
+  .introduction-text-h3 {
+    font-size: 1.2rem;
+  }
+}
+@media (max-height: 600px) {
+  .introduction-text h1 {
+    font-size: 3.5rem;
+  }
+  .introduction-text h2 {
+    font-size: 1.5rem;
+  }
+  .introduction-text-h3 {
+    font-size: 1.1rem;
+  }
+}
+@keyframes hello {
+  0% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.4;
+  }
+  60% {
+    opacity: 0.6;
+  }
+  80% {
+    opacity: 0.8;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes nobert-h2 {
+  0% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 0;
+  }
+  40% {
+    opacity: 0;
+  }
+  60% {
+    opacity: 0;
+  }
+  80% {
+    opacity: 0.75;
+  }
+  100% {
+    opacity: 1;
+  }
+}
