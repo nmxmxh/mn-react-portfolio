@@ -8,6 +8,12 @@ import ErrorBoundary from './components/error-boundary/error-boundary.component'
 import Menu from './components/menu/menu.component';
 import Spinner from './components/with-spinner/spinner/spinner.component';
 
+import ReactGA from 'react-ga';
+
+const trackingId = "G-ZKL2FTE3XC";
+ReactGA.initialize(trackingId);
+
+
 const EntryView = lazy(() => import('./components/entry-view/entry-view.component'));
 const Projects = lazy(() => import('./components/projects/projects.component'));
 const Blog = lazy(() => import('./components/blog/blog.component'));
