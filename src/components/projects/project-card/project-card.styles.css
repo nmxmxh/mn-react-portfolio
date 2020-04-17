@@ -1,0 +1,84 @@
+.project-card-container {
+  height: 400px;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  border: 2px solid rgba(128, 128, 128, 0.4);
+  border-radius: 5px;
+  text-align: center;
+  margin: 15px;
+  padding: 5px;
+  background-size: cover;
+  background-position: center;
+  filter: grayscale(75%);
+  font-family: "Comic Neue", cursive;
+  cursor: pointer;
+}
+@media (max-width: 1024px) {
+  .project-card-container {
+    height: 375px;
+    width: 250px;
+  }
+}
+@media (max-height: 800px) and (max-width: 500px) {
+  .project-card-container {
+    height: 350px;
+    width: 250px;
+  }
+}
+@media (max-height: 500px) and (min-width: 500px) {
+  .project-card-container {
+    height: 250px;
+    width: 250px;
+  }
+}
+.project-card-container:hover,
+.project-card-container:focus {
+  border: 2px solid red;
+  transition: all 0.3s ease-in;
+  filter: grayscale(0%);
+  box-shadow: 1px 1px 1px #b3b3b3;
+}
+.project-card-container:hover .project-content-container,
+.project-card-container:focus .project-content-container {
+  background-color: #000;
+}
+.project-card-container .project-content-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 25%;
+  color: #e9e9e9;
+  background-color: rgba(0, 0, 0, 0.75);
+  transition: all 0.3s ease-in;
+  padding: 5px;
+  text-align: center;
+  border-radius: 5px;
+}
+.project-card-container h2 {
+  font-weight: 500;
+}
+@media (max-height: 800px) and (max-width: 500px) {
+  .project-card-container h2 {
+    font-size: 1.5rem;
+  }
+}
+@media (max-height: 500px) and (min-width: 500px) {
+  .project-card-container h2 {
+    font-size: 1rem;
+  }
+}
+.project-card-container p {
+  font-weight: 200;
+}
+@media (max-height: 800px) and (max-width: 500px) {
+  .project-card-container p {
+    font-size: 1rem;
+  }
+}
+@media (max-height: 500px) and (min-width: 500px) {
+  .project-card-container p {
+    font-size: 0.75rem;
+  }
+}

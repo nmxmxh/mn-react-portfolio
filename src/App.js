@@ -1,6 +1,7 @@
 import React, { lazy, Suspense } from 'react';
 import { Switch, Route } from 'react-router-dom';
 import styled from 'styled-components';
+import Helmet from 'react-helmet';
 
 import './App.css';
 
@@ -39,6 +40,32 @@ function App() {
 
   return (
     <div className="App">
+      <Helmet>
+          <title>Nobert's Portfolio</title>
+          <meta name="viewport" content="width=device-width, initial-scale=1" />
+          <meta name="theme-color" content="#000000" />
+          <meta
+            name="description"
+            content="Welcome to Nobert's Portfolio Site"
+          />
+          <meta 
+            name="keywords"
+            content="momoh, nobert, momoh nobert, portfolio, web design, writing, nigerian, developer, freelance"
+          />
+          <meta 
+            name="robots"
+            content="index,follow"
+          />
+          <meta 
+            name="msapplication-navbutton-color"
+            content="#000000"
+          />    
+          <meta 
+            name="apple-mobile-web-app-status-bar-style"
+            content="#BDBDBD"
+          />
+          <link rel="canonical" href="https://momohnobert.xyz" />
+        </Helmet>
       <MenuStyle>
         <Menu />
       </MenuStyle>
