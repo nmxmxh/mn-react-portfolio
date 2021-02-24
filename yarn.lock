@@ -9066,14 +9066,6 @@ react-side-effect@^1.1.0:
   dependencies:
     shallowequal "^1.0.1"
 
-react-use-dark-mode@^2.0.3:
-  version "2.0.3"
-  resolved "https://registry.yarnpkg.com/react-use-dark-mode/-/react-use-dark-mode-2.0.3.tgz#f06c131d8886ce2ecdd7beb1789b8d32b707a63a"
-  integrity sha512-KE5Q9LEWdzkPWmP4l6fdTo6Lv7xYLBa1nLCqxj7COagrUdP2FipagUquUWXWbGqdaGb1CMm1fE8JJjIlTSF6Lw==
-  dependencies:
-    react "^16.13.1"
-    react-dom "^16.13.1"
-
 react@^16.13.1:
   version "16.14.0"
   resolved "https://registry.yarnpkg.com/react/-/react-16.14.0.tgz#94d776ddd0aaa37da3eda8fc5b6b18a4c9a3114d"
